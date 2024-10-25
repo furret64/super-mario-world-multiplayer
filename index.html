@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNES Tetris Multiplayer</title>
+    <style>
+        /* Center the emulator and set the background */
+        body {
+            background-image: url('SNES.webp'); /* Ensure 'SNES.webp' is in the same directory */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #game-container {
+            width: 640px;
+            height: 480px;
+            max-width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="game"></div>
+    </div>
+    <script type="text/javascript">
+        EJS_player = '#game';
+        EJS_gameUrl = 'https://raw.githubusercontent.com/furret64/snes-tetris-multiplayer/main/Tetris%20%26%20Dr.%20Mario%20(USA).sfc';
+        EJS_core = 'bsnes';
+    </script>
+    <script src="https://www.emulatorjs.com/loader.js"></script>
+</body>
+</html>
